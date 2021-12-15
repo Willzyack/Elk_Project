@@ -145,7 +145,7 @@ The file you update to make Ansible run the playbook is the hosts file. The ELK 
 
 HTTP://<ELKServer_Public_IP>:5601
 
-<b>-As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.-</b>
+<b>-The specific commands you will need to run to download the playbook, update the files, etc.-</b>
 
 - Login to your jump box via command line.
   - ssh [username@Jump.Box.IP]
