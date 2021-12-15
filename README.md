@@ -136,7 +136,7 @@ Filebeat collects system type events on the three web servers by monitoring the 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the install-elk file to /etc/ansible/roles/.
+- Copy the install-elk file to /etc/ansible/.
 - Update the host file to include the Elk server IP address and to specify python3.
 
 - Run the playbook, and navigate to HTTP://<ELKServer_Public_IP>:5601 to check that the installation worked as expected.
