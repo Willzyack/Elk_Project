@@ -122,9 +122,7 @@ The following 3 Web servers are being monitored: 10.0.0.5, 10.0.0.6, 10.0.0.7
 
 We installed Filebeat and Metricbeat.
 
-These Beats allow us to collect the following information from each machine:
-
-<b>-In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.-</b>
+<b>-These Beats allow us to collect the following information from each machine:-</b>
 
 Filebeat collects system type events on the three Web servers by monitoring the Elasticsearch log files. Metricbeat collects metrics on the three Web servers such as CPU and Memory usage.
 
