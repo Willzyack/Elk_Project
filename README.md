@@ -102,7 +102,7 @@ The playbook implements the following tasks:
 
 <b>-In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.-</b>
 
-- Install docker.io, python3-pip, and Python Docker via a playbook. (Screenshot shown below)
+- Increase virtual memory to "262144" and install docker.io, python3-pip, and Python Docker via a playbook. (Screenshot shown below)
 - Download the sebp/elk:761 image. (Shown in screenshot under "name: download and launch a docker web container")
 - Enable docker services. (Shown in screenshot under "name: Enable docker services")
 
