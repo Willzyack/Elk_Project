@@ -49,7 +49,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 <b>-What does Filebeat watch for?-</b>
 
-Filebeat collects log events based on changes to the log files or locations that you specifiy.
+Filebeat collects log events based on changes to the log files or locations that you specify.
 
 <b>-What does Metricbeat record?-</b>
 
