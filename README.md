@@ -71,6 +71,7 @@ Only the JumpBoxProvisioner machine can accept connections from the Internet. Ac
 - Will's Public IP Address
 
 Machines within the network can only be accessed by JumpBoxProvisioner.
+
 <b>-Which machine did you allow to access your ELK VM? What was its IP address?-</b>
 
 My personal machine is allowed to access my ELK VM via my public IP address over port 5601.
@@ -88,20 +89,23 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+
 <b>-What is the main advantage of automating configuration with Ansible?-</b>
+
 The main advantave of automating configurations with Ansible is that it ensures that the provisioning scripts run identically everywhere.
 
 The playbook implements the following tasks:
+
 <b>-In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.-</b>
 
-- ...Install docker.io, python3-pip, and Python Docker via a playbook. (Screenshot shown below)
-- ...Download the sebp/elk:761 image. (Shown in screenshot under "name: download and launch a docker web container")
-- ...Enable docker services. (Shown in screenshot under "name: Enable docker services")
+- Install docker.io, python3-pip, and Python Docker via a playbook. (Screenshot shown below)
+- Download the sebp/elk:761 image. (Shown in screenshot under "name: download and launch a docker web container")
+- Enable docker services. (Shown in screenshot under "name: Enable docker services")
 
 ![ELK Playbook Screenshot](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Install_Elk_Playbook.PNG "ELK Playbook")
 
-- ...While in the Ansible container, SSH into the ELK server ("ssh username@Elk.Server.Address")
-- ...Run "docker ps" to verify that the sebp/elk:761 container is running.
+- While in the Ansible container, SSH into the ELK server ("ssh username@Elk.Server.Address")
+- Run "docker ps" to verify that the sebp/elk:761 container is running.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -109,17 +113,19 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
+
 <b>-List the IP addresses of the machines you are monitoring-</b>
 
 The following 3 Web servers are being monitored: 10.0.0.5, 10.0.0.6, 10.0.0.7
 
 We have installed the following Beats on these machines:
 
-<b>-Specify which Beats you successfully installed-
-</b>
+<b>-Specify which Beats you successfully installed-</b>
+
 We installed Filebeat and Metricbeat.
 
 These Beats allow us to collect the following information from each machine:
+
 <b>-In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.-</b>
 
 Filebeat collects system type events on the three Web servers by monitoring the Elasticsearch log files. Metricbeat collects metrics on the three Web servers such as CPU and Memory usage.
