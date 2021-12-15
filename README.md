@@ -2,14 +2,14 @@
 
 The files in this repository were used to configure the network depicted below.
 
-[Network Diagram for Project](https://github.com/Willzyack/Elk_Project/blob/main/Diagrams/Project_Diagram_Final.jpg)
+![Network Diagram for Project](https://github.com/Willzyack/Elk_Project/blob/main/Diagrams/Project_Diagram_Final.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yaml file may be used to install only certain pieces of it, such as Filebeat.
 
-[Install Elk Playbook](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Install_Elk_Playbook.PNG)
-[Install Filebeat](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Filebeat_Playbook.PNG)
-[Install Metricbeat](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/MetricBeat_Playbook.PNG)
-[Webservers Settings Playbook](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/My_Playbook.PNG)
+![Install Elk Playbook](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Install_Elk_Playbook.PNG)
+![Install Filebeat](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Filebeat_Playbook.PNG)
+![Install Metricbeat](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/MetricBeat_Playbook.PNG)
+![Webservers Settings Playbook](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/My_Playbook.PNG)
 
 This document contains the following details:
 - Description of the Topologu
