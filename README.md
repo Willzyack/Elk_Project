@@ -104,7 +104,8 @@ The playbook implements the following tasks:
 
 ![ELK Playbook Screenshot](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Install_Elk_Playbook.PNG "ELK Playbook")
 
-- While in the Ansible container, SSH into the ELK server ("ssh username@Elk.Server.Address")
+- While in the Ansible container, SSH into the ELK server 
+  - ssh [username@Elk.Server.Address]
 - Run "docker ps" to verify that the sebp/elk:761 container is running.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
@@ -152,7 +153,7 @@ HTTP://<ELKServer_Public_IP>:5601
 <b>-As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.-</b>
 
 - Login to your jump box via command line.
-  - ssh username@Jump.Box.IP
+  - ssh [username@Jump.Box.IP]
 - List your container list to find the one you should connect to. 
   - sudo docker container list -a
 - Start your docker.
