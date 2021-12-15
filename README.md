@@ -136,6 +136,7 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to HTTP://<ELKServer_Public_IP>:5601 to check that the installation worked as expected.
 
 <b>_Answer the following questions to fill in the blanks:_</b>
+
 <b>-Which file is the playbook? Where do you copy it?-</b>
 
 The file is [install-elk.yml](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Install_Elk_Playbook.PNG). You copy it into /etc/ansible
