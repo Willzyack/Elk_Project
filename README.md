@@ -20,7 +20,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 <b>Web Server Settings Playbook</b>
 
-![Webservers Settings Playbook](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/My_Playbook.PNG)
+![Web Servers Settings Playbook](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/My_Playbook.PNG)
 
 This document contains the following details:
 - Description of the Topologu
@@ -122,7 +122,7 @@ This ELK server is configured to monitor the following machines:
 
 <b>-List the IP addresses of the machines you are monitoring-</b>
 
-The following 3 Web servers are being monitored: 10.0.0.5, 10.0.0.6, 10.0.0.7
+The following web servers are being monitored: 10.0.0.5, 10.0.0.6, 10.0.0.7
 
 <b>-We have installed the following Beats on these machines:-</b>
 
@@ -130,7 +130,7 @@ We installed Filebeat and Metricbeat.
 
 <b>-These Beats allow us to collect the following information from each machine:-</b>
 
-Filebeat collects system type events on the three Web servers by monitoring the Elasticsearch log files. Metricbeat collects metrics on the three Web servers such as CPU and Memory usage.
+Filebeat collects system type events on the three web servers by monitoring the Elasticsearch log files. Metricbeat collects metrics on the three web servers such as uptime, CPU usage, and memory usage.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -149,7 +149,7 @@ The file is [install-elk.yml](https://github.com/Willzyack/Elk_Project/blob/main
 
 <b>-Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?-</b>
 
-The file you update to make Ansible run the playbook is the hosts file. The ELK server and Web servers are listed seperately in the hosts file.
+The file you update to make Ansible run the playbook is the hosts file. The ELK server and web servers are listed seperately in the hosts file.
 
 <b>-Which URL do you navigate to in order to check that the ELK server is running?-</b>
 
