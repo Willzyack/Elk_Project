@@ -64,7 +64,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Web1               | Server (Includes DVWA Container)                | 10.0.0.5   | Linux (Ubuntu 18.04 LTS)           |
 | Web2               | Server (Includes DVWA Container)                | 10.0.0.6   | Linux (Ubuntu 18.04 LTS)           |
 | Web3               | Server (Includes DVWA Container)                | 10.0.0.7   | Linux (Ubuntu 18.04 LTS)           |
-| ElkServer          | Monitoring Server                               | 10.1.0.4   | Linux (Ubuntu 18.04 LTS)           |
+| ElkServer          | Monitoring Server (Includes ELK Container)      | 10.1.0.4   | Linux (Ubuntu 18.04 LTS)           |
  
 ### Access Policies
 
