@@ -167,8 +167,9 @@ HTTP://<ELKServer_Public_IP>:5601
   - nano /etc/ansible/host
   - Add elk and it's IP address like shown below.
   - ![host](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Hosts_Final.PNG)
-- To download the playbook, visit the link [here](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Install_Elk_Playbook.PNG) and copy the playbook (the spacing is important, try to copy exactly)
+- To download the playbook, create a new file via nano, and copy the playbook information from the screenshot below (the spacing is important, try to copy exactly).
   - nano install-elk.yml
+  - - [here](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Install_Elk_Playbook.PNG) 
 - From the Ansible container, connect to your new ELK server.
   - ssh [username@ELK.Server.IP]
 - Verify the sebp/elk:761 container is running correctly
