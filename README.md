@@ -118,17 +118,9 @@ The following screenshot displays the result of running `docker ps` after succes
 ![docker ps Screenshot](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/elk_playbook.PNG "docker ps Screenshot")
 
 ### Target Machines & Beats
-This ELK server is configured to monitor the following machines:
+This ELK server is configured to monitor the following web servers: 10.0.0.5, 10.0.0.6, 10.0.0.7
 
-<b>-List the IP addresses of the machines you are monitoring-</b>
-
-The following web servers are being monitored: 10.0.0.5, 10.0.0.6, 10.0.0.7
-
-<b>-We have installed the following Beats on these machines:-</b>
-
-We installed Filebeat and Metricbeat.
-
-<b>-These Beats allow us to collect the following information from each machine:-</b>
+We installed Filebeat and Metricbeat on these web servers.
 
 Filebeat collects system type events on the three web servers by monitoring the Elasticsearch log files. Metricbeat collects metrics on the three web servers such as uptime, CPU usage, and memory usage.
 
@@ -137,11 +129,9 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the install-elk file to /etc/ansible/.
-- Update the host file to include the ELK server IP address and to specify python3.
+- Update the hosts file to include the ELK server IP address and to specify python3.
 
 - Run the playbook, and navigate to HTTP://<ELKServer_Public_IP>:5601 to check that the installation worked as expected.
-
-<b>_Answer the following questions to fill in the blanks:_</b>
 
 <b>-Which file is the playbook? Where do you copy it?-</b>
 
@@ -167,10 +157,10 @@ HTTP://<ELKServer_Public_IP>:5601
   - sudo docker attach [container_name]
 - Head to /etc/ansible/
   - cd /etc/ansible/
-- Open the host file and add the ELK attribute and it's IP address.
-  - nano /etc/ansible/host
+- Open the hosts file and add the ELK attribute and it's IP address.
+  - nano /etc/ansible/hosts
   - Add the ELK group and it's IP address like shown below.
-    ![host](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Hosts_Final.PNG)
+    ![hosts](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Hosts_Final.PNG)
 - To download the playbook, create a new file via nano, and copy the playbook information from the screenshot below (the spacing is important, try to copy exactly).
   - nano /etc/ansible/install-elk.yml
     ![install-elk](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Install_Elk_Playbook.PNG) 
