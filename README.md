@@ -6,9 +6,9 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yaml file may be used to install only certain pieces of it, such as Filebeat.
 
-<b>Elk Playbook</b>
+<b>ELK Playbook</b>
 
-![Install Elk Playbook](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Install_Elk_Playbook.PNG)
+![Install ELK Playbook](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Install_Elk_Playbook.PNG)
 
 <b>Filebeat Playbook</b>
 
@@ -137,7 +137,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the install-elk file to /etc/ansible/.
-- Update the host file to include the Elk server IP address and to specify python3.
+- Update the host file to include the ELK server IP address and to specify python3.
 
 - Run the playbook, and navigate to HTTP://<ELKServer_Public_IP>:5601 to check that the installation worked as expected.
 
@@ -167,9 +167,9 @@ HTTP://<ELKServer_Public_IP>:5601
   - sudo docker attach [container_name]
 - Head to /etc/ansible/
   - cd /etc/ansible/
-- Open the host file and add the elk attribute and it's IP address.
+- Open the host file and add the ELK attribute and it's IP address.
   - nano /etc/ansible/host
-  - Add elk and it's IP address like shown below.
+  - Add the ELK group and it's IP address like shown below.
     ![host](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Hosts_Final.PNG)
 - To download the playbook, create a new file via nano, and copy the playbook information from the screenshot below (the spacing is important, try to copy exactly).
   - nano /etc/ansible/install-elk.yml
