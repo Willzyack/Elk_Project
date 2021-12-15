@@ -43,7 +43,7 @@ Load balancers defends the organization against DDoS attacks by shifting attack 
 
 <b>-What is the advantage of a jump box?- </b>
 
-The advantage of a jump box is that it allows user(s) to connect to a secure computer via SSH where no other protocols are allowed outbound to the Internet or into the orgnaization's network.
+The advantage of a jump box is that it allows user(s) to connect to a secure computer via SSH where no other protocols are allowed outbound to the Internet or into the organization's network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 
@@ -58,13 +58,13 @@ Metricbeat records the metrics and statistics that it collects and ships them to
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name               | Function | IP Address | Operating System |
-|--------------------|----------|------------|------------------|
-| JumpBoxProvisioner | Gateway  | 10.0.0.1   | Linux            |
-| Web1               | Server   | 10.0.0.5   | Linux            |
-| Web2               | Server   | 10.0.0.6   | Linux            |
-| Web3               | Server   | 10.0.0.7   | Linux            |
-| ElkServer          | Server   | 10.1.0.4   | Linux            |
+| Name               | Function                                        | IP Address | Operating System                   |
+|--------------------|-------------------------------------------------|------------|------------------------------------|
+| JumpBoxProvisioner | Gateway (Includes Ansible and Docker Containers)| 10.0.0.1   | Linux (Ubuntu 18.04 LTS)           |
+| Web1               | Server (Includes DVWA Container)                | 10.0.0.5   | Linux (Ubuntu 18.04 LTS)           |
+| Web2               | Server (Includes DVWA Container)                | 10.0.0.6   | Linux (Ubuntu 18.04 LTS)           |
+| Web3               | Server (Includes DVWA Container)                | 10.0.0.7   | Linux (Ubuntu 18.04 LTS)           |
+| ElkServer          | Monitoring Server                               | 10.1.0.4   | Linux (Ubuntu 18.04 LTS)           |
  
 ### Access Policies
 
@@ -88,7 +88,7 @@ A summary of the access policies in place can be found in the table below.
 | Web1                | No                  | 10.0.0.4             |
 | Web2                | No                  | 10.0.0.4             |
 | Web3                | No                  | 10.0.0.4             |
-| ElkServer           | No                  | Will's Public IP     |
+| ElkServer           | Yes                 | Will's Public IP     |
 
 ### Elk Configuration
 
