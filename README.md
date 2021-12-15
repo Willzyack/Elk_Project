@@ -106,7 +106,8 @@ The playbook implements the following tasks:
 
 - While in the Ansible container, SSH into the ELK server 
   - ssh [username@Elk.Server.Address]
-- Run "docker ps" to verify that the sebp/elk:761 container is running.
+- Run the following command to verify that the sebp/elk:761 container is running in the command line.
+  - docker ps
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
