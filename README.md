@@ -151,10 +151,23 @@ HTTP://<ELKServer_Public_IP>:5601
 
 <b>-As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.-</b>
 
-- To download the playbook,
-  - 
-- Access Policies
-- ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
-- How to Use the Ansible Build
+- Login to your jump box via command line.
+ - ssh username@Jump.Box.IP
+- List your container list to find the one you should connect to. 
+ - sudo docker container list -a
+- Start your docker.
+ - sudo docker start [container_name]
+- Attach to the docker.
+ - sudo docker attach [container_name]
+- Head to /etc/ansible/
+ - cd /etc/ansible/
+- Open the host file and add the elk attribute and it's IP address.
+ - nano /etc/ansible/host
+ - Add elk and it's IP address like shown below.
+ - ![host](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Hosts_Final.PNG)
+- To download the playbook, visit the link [here](https://github.com/Willzyack/Elk_Project/blob/main/Ansible/Install_Elk_Playbook.PNG) and copy the playbook (the spacing is important, try to copy exactly)
+ - nano install-elk.yml
+- From the Ansible container, connect to your new ELK server.
+ - ssh [username@ELK.Server.IP]
+- Verify the sebp/elk:761 container is running correctly
+  - docker ps
